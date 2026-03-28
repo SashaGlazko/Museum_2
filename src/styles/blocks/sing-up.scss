@@ -14,6 +14,8 @@
 
 
   &__description{
+    @include raleway-thin;
+
     margin: 0 ;
     grid-column: 1/-1;
     @include on-desktop{

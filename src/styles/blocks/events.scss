@@ -28,7 +28,7 @@
     width: 100%;
     grid-column: 1/-1;
     object-fit: contain;
-    max-height: 800px;
+    
 
     @include on-tablet{
       grid-column: span 3;
