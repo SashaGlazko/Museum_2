@@ -1,13 +1,14 @@
 .icon{
   height: $icon-size;
   width: $icon-size;
-  background-size: contain;
+
   background-repeat: no-repeat;
 
   @include hover(transform,scale(1.05));
 
   &--menu{
     background-image: url(/src/images/icons/menu-burger.svg);
+    transform: translateY(-2px);
   }
 
   &--close{

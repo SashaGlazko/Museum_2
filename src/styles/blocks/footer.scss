@@ -59,6 +59,8 @@
       font-weight: bold;
     }
 
+
+
   }
   &__icons{
     display: flex;
@@ -110,6 +112,10 @@
     @include raleway-thin;
 
     font-size: 16px;
+
+        &::after{
+      bottom: 2px;
+    }
   }
 
   &__bottom{
