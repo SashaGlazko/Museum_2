@@ -1,5 +1,7 @@
 'use strict';
 
+import '../styles/main.scss';
+
 document.addEventListener('DOMContentLoaded', () => {
   const dropdowns = document.querySelectorAll('.dropdown');
 
