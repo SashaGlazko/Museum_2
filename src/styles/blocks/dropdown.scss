@@ -1,63 +1,60 @@
-.dropdown{
+.dropdown {
   display: none;
-  position: relative;
 
-
-
-  @include on-tablet{
+  @include on-tablet {
     display: block;
   }
 
+  position: relative; // батько для absolute
 
-  &__trigger{
-    height: 24px;
-
-    background-color: $c-dark-green;
-    border: 0;
+  &__trigger {
+    display: flex;
+    align-items: center;
     padding: 0;
-
-    @include hover(transform,scale(1.05))
-  }
-
-  &__ua{
-    @include raleway-button;
-
-
-    color: $c-white;
-    font-size: 16px;
+    cursor: pointer;
+    background: $c-dark-green;
+    border: 0;
+    
 
     &::after{
-      content: '⌄';
-      position: relative;
-      bottom: 6px;
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-image: url(/src/images/icons/arrow-dow-icon.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 5px;
 
-    }
-
-    &:hover::after{
-      animation: move 1s  1 forwards;
     }
   }
 
-    &__content{
-      position: absolute;
-      top: 35px;
-      transition: height 0.3s;
-      height: 0;
-      overflow: hidden;
 
-    &--active{
-      height: auto;
+  &__content {
+    position: absolute; // dropdown не впливає на layout
+    top: 120%; // одразу під кнопкою
+    right: 0;
+    width: max-content;
+    height: 0;
+    overflow: hidden;
+    background: $c-dark-green;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: height 0.3s ease;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
-  }
-}
 
-@keyframes move {
+    li {
+      @include raleway-thin;
 
-  from{
-    bottom: 12px;
-  }
-
-  to{
-    bottom: 5px;
+      font-weight: 450;
+      padding: 8px 12px;
+      cursor: pointer;
+      color: $c-white;
+    }
   }
 }
