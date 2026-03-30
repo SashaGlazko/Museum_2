@@ -34,7 +34,17 @@
   &__picture {
     @include hover(transform, scale(1.05));
 
+    max-height: 360px;
     width: 100%;
+    object-fit: cover;
+
+    @include on-tablet {
+      max-height: 420px;
+    }
+
+    @include on-desktop {
+      max-height: 480px;
+    }
   }
 
   &__top {
