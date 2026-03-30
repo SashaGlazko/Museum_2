@@ -14,9 +14,8 @@
     cursor: pointer;
     background: $c-dark-green;
     border: 0;
-    
 
-    &::after{
+    &::after {
       content: '';
       display: block;
       width: 10px;
@@ -25,10 +24,8 @@
       background-size: contain;
       background-repeat: no-repeat;
       margin-left: 5px;
-
     }
   }
-
 
   &__content {
     position: absolute; // dropdown не впливає на layout
@@ -39,7 +36,7 @@
     overflow: hidden;
     background: $c-dark-green;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: height 0.3s ease;
 
     ul {

@@ -1,53 +1,49 @@
-.footer{
+.footer {
   box-sizing: border-box;
   padding-block: 34px 30px;
   background-color: $c-dark-green;
 
-  &__content{
+  &__content {
     @include page-grid;
 
     row-gap: 50px;
     align-items: top;
   }
 
-  &__block{
-     gap: 10px;
+  &__block {
+    gap: 10px;
 
-     @include on-tablet{
+    @include on-tablet {
       gap: 30px;
-     }
+    }
   }
 
-  &__contacts{
+  &__contacts {
     grid-column: 1/-1;
     display: grid;
 
-
-    @include on-tablet{
+    @include on-tablet {
       grid-column: span 2;
-
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: span 4;
     }
   }
 
-  &__title{
+  &__title {
     @include playfair-bold;
 
     color: $c-white;
     font-size: 18px;
     margin: 0;
 
-    @include on-tablet{
+    @include on-tablet {
       font-size: 20px;
     }
   }
 
-
-
-  &__link{
+  &__link {
     display: block;
     color: $c-white;
     text-decoration: none;
@@ -55,89 +51,80 @@
 
     @include raleway-thin;
 
-    &:hover{
+    &:hover {
       font-weight: bold;
     }
-
-
-
   }
-  &__icons{
+  &__icons {
     display: flex;
     gap: 20px;
     margin-top: 30px;
   }
 
-  &__scedule{
+  &__scedule {
     grid-column: 1/-1;
     display: grid;
 
-
-    @include on-tablet{
+    @include on-tablet {
       grid-column: span 2;
     }
-    @include on-desktop{
+    @include on-desktop {
       grid-column: span 4;
     }
   }
 
-  &__info{
+  &__info {
     @include raleway-thin;
 
     color: $c-white;
   }
 
-  &__nav{
+  &__nav {
     grid-column: 1/-1;
     display: flex;
     flex-direction: column;
 
-
-    @include on-tablet{
+    @include on-tablet {
       grid-column: span 2;
-
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: span 4;
     }
   }
 
-  &__nav-list{
-    gap:5px;
-
+  &__nav-list {
+    gap: 5px;
   }
 
-  &__nav-link{
+  &__nav-link {
     @include raleway-thin;
 
     font-size: 16px;
 
-        &::after{
+    &::after {
       bottom: 2px;
     }
   }
 
-  &__bottom{
+  &__bottom {
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
   }
 
-  &__elements{
+  &__elements {
     grid-column: 1/-1;
     display: flex;
     gap: 20px;
 
-    @include on-desktop{
+    @include on-desktop {
       gap: 100px;
     }
   }
 
-  &__element{
+  &__element {
     @include raleway-thin;
 
     color: $c-white;

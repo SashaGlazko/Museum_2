@@ -1,4 +1,4 @@
-.top-bar{
+.top-bar {
   grid-column: 1/-1;
 
   display: flex;
@@ -6,27 +6,24 @@
   align-items: center;
   padding-block: 20px;
 
-  @include on-desktop{
+  @include on-desktop {
     padding-top: 26px;
   }
 
-
-  &__logo{
+  &__logo {
     display: flex;
 
-    @include hover(transform,scale(1.05))
+    @include hover(transform, scale(1.05));
   }
 
-  &__photo{
+  &__photo {
     height: 37px;
     object-fit: contain;
   }
 
-  &__elements{
+  &__elements {
     display: flex;
     align-items: center;
     gap: 40px;
   }
-
-
 }

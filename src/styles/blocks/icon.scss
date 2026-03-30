@@ -1,46 +1,43 @@
-.icon{
+.icon {
   height: $icon-size;
   width: $icon-size;
   background-size: contain;
   background-repeat: no-repeat;
 
+  @include hover(transform, scale(1.05));
 
-  @include hover(transform,scale(1.05));
-
-  &--menu{
+  &--menu {
     background-image: url(/src/images/icons/menu-burger.svg);
     transform: translateY(-2px);
   }
 
-  &--ua{
+  &--ua {
     background-image: url(/src/images/icons/UA.svg);
     height: 18px;
-
   }
 
-  &--close{
+  &--close {
     background-image: url(/src/images/icons/white-close-icon.svg);
     transform: translateY(-2px);
   }
 
-  &--facebook{
+  &--facebook {
     background-image: url(/src/images/icons/facebook.svg);
   }
 
-  &--twitter{
+  &--twitter {
     background-image: url(/src/images/icons/twitter.svg);
   }
 
-  &--telegram{
+  &--telegram {
     background-image: url(/src/images/icons/telegram.svg);
   }
 
-  &--instagram{
+  &--instagram {
     background-image: url(/src/images/icons/instagram.svg);
   }
 
-  &--arrow{
+  &--arrow {
     background-image: url(/src/images/icons/arrow-top.svg);
   }
-
 }

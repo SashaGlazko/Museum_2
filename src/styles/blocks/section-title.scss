@@ -1,21 +1,19 @@
-.section-title{
+.section-title {
   color: $c-text;
   display: flex;
   justify-content: space-between;
 
-
-  &__text{
+  &__text {
     @include playfair-bold;
 
     margin: 0;
 
-
     font-size: 28px;
-    @include on-tablet{
+    @include on-tablet {
       font-size: 40px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       font-size: 48px;
     }
   }

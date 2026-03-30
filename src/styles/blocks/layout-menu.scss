@@ -1,23 +1,18 @@
-.layout-menu{
-
-  &__content{
+.layout-menu {
+  &__content {
     display: grid;
     row-gap: 90px;
 
-      @include on-tablet{
-        row-gap: 120px;
-      }
+    @include on-tablet {
+      row-gap: 120px;
+    }
 
-      @include on-desktop{
-        row-gap: 200px;
-      }
+    @include on-desktop {
+      row-gap: 200px;
+    }
   }
 
-
-
-
-
-  &__button{
+  &__button {
     width: 270px;
     font-size: 16px;
     color: $c-orange;
@@ -29,46 +24,38 @@
     cursor: pointer;
     transition: all 0.3s;
 
-    &::after{
+    &::after {
       content: '⭢';
       padding-left: 4px;
     }
 
-    &:hover{
-      border:1px solid $c-dark-orange;
+    &:hover {
+      border: 1px solid $c-dark-orange;
       color: $c-dark-orange;
     }
 
-    &:active{
-      border:1px solid $c-orange;
+    &:active {
+      border: 1px solid $c-orange;
       color: $c-orange;
     }
 
-
-
-
-
-   
-    &--top{
+    &--top {
       display: none;
 
-      @include on-tablet{
+      @include on-tablet {
         display: flex;
       }
     }
 
-    &--bottom{
+    &--bottom {
       display: flex;
       width: 100%;
       height: 60px;
       margin-top: 10px;
 
-
-      @include on-tablet{
-       display: none;
-
+      @include on-tablet {
+        display: none;
       }
-
     }
   }
 }

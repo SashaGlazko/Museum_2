@@ -1,11 +1,11 @@
-.page{
+.page {
   scroll-behavior: smooth;
-  &__body{
+  &__body {
     margin: 0;
-     background: $c-gray;
+    background: $c-gray;
   }
 
-  &__menu{
+  &__menu {
     position: fixed;
     inset: 0;
 
@@ -15,36 +15,34 @@
     opacity: 0;
     pointer-events: none;
 
-    &:target{
+    &:target {
       transform: translate(0);
       opacity: 1;
       pointer-events: all;
     }
   }
 
-  &__layout-menu{
+  &__layout-menu {
     margin-top: 90px;
 
-    @include on-tablet{
-    margin-top: 100px;
+    @include on-tablet {
+      margin-top: 100px;
     }
 
-    @include on-desktop{
-    margin-top: 110px;
+    @include on-desktop {
+      margin-top: 110px;
     }
   }
 
-
-  &__footer{
+  &__footer {
     margin-top: 80px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-top: 128px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       margin-top: 200px;
     }
   }
 }
-

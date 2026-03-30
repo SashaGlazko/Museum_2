@@ -1,63 +1,60 @@
-.sing-up{
-  &__content{
+.sing-up {
+  &__content {
     @include page-grid;
-
   }
 
-  &__section-title{
+  &__section-title {
     grid-column: 1/-1;
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: span 6;
     }
   }
 
-
-  &__description{
+  &__description {
     @include raleway-thin;
 
-    margin: 0 ;
+    margin: 0;
     grid-column: 1/-1;
-    @include on-desktop{
+    @include on-desktop {
       grid-column: span 6;
       margin: auto;
     }
   }
 
-  &__bottom{
+  &__bottom {
     margin-top: 20px;
     grid-column: 1/-1;
     display: grid;
     gap: 30px;
   }
 
-
-  &__email{
+  &__email {
     width: 100%;
     border: 0;
     background-color: $c-gray;
     font-size: 16px;
 
-    &::placeholder{
+    &::placeholder {
       @include raleway-thin;
     }
 
-    &:hover::placeholder{
+    &:hover::placeholder {
       transition: color 0.3s;
       color: $c-orange;
     }
 
-    &:focus{
+    &:focus {
       outline: 0;
       background-color: $c-gray;
     }
   }
 
-  &__email-wrapper{
+  &__email-wrapper {
     position: relative;
 
-    &::after{
-      content:'';
+    &::after {
+      content: '';
       transition: all 0.3s;
       width: 100%;
       position: absolute;
@@ -68,19 +65,17 @@
       height: 1px;
       background-color: $c-text;
 
-
-      @include on-tablet{
+      @include on-tablet {
         width: 450px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         width: 480px;
       }
-
     }
 
-    &:hover::after{
-    background-color: $c-orange;
-  }
+    &:hover::after {
+      background-color: $c-orange;
+    }
   }
 }
